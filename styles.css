@@ -1,83 +1,87 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.swiper-container{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
-.swiper-wrapper{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    transition: transform 0.25s linear;
+.grabbing {
+  cursor: pointer;
 }
 
-.swiper-slide{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1 0 100%;
+.swiper-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: transform 0.25s linear;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 100%;
 }
 
 .swiper-slide img {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1 0 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 100%;
+  object-fit: cover;
 }
 
 .swiper-button-next,
-.swiper-button-prev{
-    width: 50px;
-    height: 50px;
-    background-color: #f1f1f1;
-    color: black;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 28px;
-    position: absolute;
-    cursor: pointer;
-    user-select: none;
+.swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  background-color: #f1f1f1;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  position: absolute;
+  cursor: pointer;
+  user-select: none;
 }
 
-.swiper-button-next{
-    right: 0;
-    top: 40%;
-    transform: translate(-50%, 80%);
+.swiper-button-next {
+  right: 0;
+  top: 40%;
+  transform: translate(-50%, 80%);
 }
 
 .swiper-button-prev {
-    left: 0;
-    top: 40%;
-    transform: translate(50%, 80%);
+  left: 0;
+  top: 40%;
+  transform: translate(50%, 80%);
 }
 
 .swiper-button-next:hover,
-.swiper-button-prev:hover{
-    background-color: #d8d8d8;
-    transition: 0.3s ease-in-out;
+.swiper-button-prev:hover {
+  background-color: #d8d8d8;
+  transition: 0.3s ease-in-out;
 }
 
-.disable{
-    background-color: #f1f1f19c;
-    color: #c7c7c7;
-    cursor: default;
+.disable {
+  background-color: #f1f1f19c;
+  color: #c7c7c7;
+  cursor: default;
 }
 
-.disable:hover{
-    background-color: #f1f1f19c;
+.disable:hover {
+  background-color: #f1f1f19c;
 }
